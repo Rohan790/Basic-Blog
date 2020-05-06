@@ -1,9 +1,9 @@
 <%- include("partials/header") -%>
 <h1>Compose 🌠</h1>
-<form action="/compose" method="post">
+<form name="myForm" action="/compose" onsubmit="validateForm()" method="post">
   <div class="form-group">
     <label for="inputTitle">Title</label>
-    <input type="text" name="post_title" class="form-control" id="inputTitle" autofocus autocomplete="off">
+    <input type="text" name="post_title" class="form-control" id="inputTitle" autofocus autocomplete="off" required>
     <small class="form-text text-muted">Place the Title for your Text.</small><br><br>
     <label for="inputpost">Post</label>
     <textarea name="post_body" class="form-control" rows="8" cols="80" id="inputpost"></textarea>
@@ -11,3 +11,13 @@
   <button type="submit" class="btn btn-primary" name="publish">Public</button>
 </form>
 <%- include("partials/footer") -%>
+
+<script>
+  <% function validateForm() { %>
+    <% var x = document.forms["myForm"]["post"].value; %>
+    <% if (x == "") { %>
+      <% alert("Name must be filled out"); %>
+      <% return false; %>
+    <% } %>
+  <% } %>
+</script>

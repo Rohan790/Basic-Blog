@@ -2,12 +2,12 @@
 
 <h1>HOME 🏡</h1>
 
-<p style="font-size:1.5rem;"><%= homecontent %> </p>
+<p><%= homecontent %> </p>
 
 <% post.forEach(function(element){ %>
     <h1><%= element.title %></h1>
     <% let a = element.title;%>
-    <p style="font-size:1.5rem;"><%= element.content.substring(0,100) + "..." %> <a href="/post/<%=element.title%>">Read More</a> </p>
+    <p><%= element.content.substring(0,100) + "..." %> <a href="/post/<%=element.title%>">Read More</a> </p>
 <% }); %>
 
 

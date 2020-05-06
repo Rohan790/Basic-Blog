@@ -1,3 +1,42 @@
-<%- include("partials/header") -%>
-<img src="/images/404.png">
-<%- include("partials/footer") -%>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- Responsive meta tag
+    Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your <head>. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Daily Journal</title>
+
+  <!-- Bootstrap CSS
+    Copy-paste the stylesheet <link> into your <head> before all other stylesheets to load our CSS. -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Bootstrap JS
+    Copy-paste the JavaScript <link> into your <head> for working. -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body style="background-color:#dcdada96;">
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand ml-5" href="/">DAILY JOURNAL</a>
+
+    </nav>
+  </div>
+  <div class="alert alert-danger" role="alert" style="text-align:center;">
+    The page you are trying to access is not existed or it may shifted to new URL. <a href="/" class="alert-link">Press here</a> for home page.
+  </div>
+
+  <div class="container post">
+
+
+    <img src="/images/404.png">
+  <%- include("partials/footer") -%>
